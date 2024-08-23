@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
     <!-- Font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- DaisyUi CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -15,11 +18,99 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        .manrope{
-            font-family: "Manrope", sans-serif;
-        }
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-primary": "#ABEF5F",
+              "light-black": "#737373",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="manrope"></body>
+  <body class="manrope  bg-gradient-to-b from-gray-200 to-white">
+    <header>
+        <!-- Navbar section -->
+        <nav>
+            <div class="container mx-auto flex justify-between navbar  bg-base-100  bg-gradient-to-b from-gray-200 to-white">
+              <div class="navbar-start">
+                <div
+                  class="rounded-full w-8 h-8 py-1 mx-2 text-center bg-color-primary"
+                >
+                  <i class="fa fa-arrow-right -rotate-45"></i>
+                </div>
+                <a class="text-3xl font-extrabold">Rinterio</a>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li class="font-bold"><a>Home</a></li>
+                  <li class="text-light-black"><a>Services</a></li>
+                  <li class="text-light-black"><a>Portfolio</a></li>
+                  <li class="text-light-black"><a>Blogs</a></li>
+                  <li class="text-light-black"><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="hidden navbar-end lg:flex">
+                <div class="h-10 w-10 border flex items-center justify-center rounded-full bg-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="h-10 w-10 border flex items-center justify-center rounded-full bg-white mx-5">
+                    <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+                </div>
+                <a class="btn bg-color-primary rounded-full text-xl font-bold"
+                  >Book Consult
+                  <div
+                    class="rounded-full w-8 h-8 text-sm pt-1 text-white text-center bg-black"
+                  >
+                    <i class="fa fa-arrow-right -rotate-45"></i></div
+                ></a>
+              </div>
+              <div
+                class="border lg:hidden w-10 h-10 px-4 flex bg-white justify-center rounded-full border-[#E9E9E9]"
+              >
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+          <!-- Banner section -->
+    </header>
+  </body>
 </html>
